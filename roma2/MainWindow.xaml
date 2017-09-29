@@ -7,10 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
+
         <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
         <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
         <SolidColorBrush x:Key="TextBox.Focus.Border" Color="Red"/>
-        <SolidColorBrush x:Key="TextBox.Focus.Text" Color="Blue"/>
+        <SolidColorBrush x:Key="TextBox.Foreground" Color="Blue"/>
         <Style TargetType="{x:Type TextBox}">
             <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
             <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}"/>
@@ -54,7 +55,7 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="253,147,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="text" HorizontalAlignment="Left" Height="23" Margin="253,147,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
